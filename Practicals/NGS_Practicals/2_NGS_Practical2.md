@@ -302,7 +302,7 @@ samtools view -bhS -F4 -
 ```
 
 In this context, `samtools` view is the general command that allows the conversion of the SAM to BAM. 
-The *globbed* arguments are 1) `-b` [output in binary format]; and 2) `-h` include the file header, followed by the option `-F4` which only include reads with the flag bit `4` set.
+The *globbed* arguments are 1) `-b` [output in binary format]; and 2) `-h` include the file header, followed by the option `-F4` which will exclude reads with the flag bit `4` set.
 (We'll discuss flags in the next section).
 The binary output is then written to the file `2_alignedData/bam/SRR2003569_chI.bam` using the `>` symbol.
 
